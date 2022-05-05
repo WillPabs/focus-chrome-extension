@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 3,
+    "name" : "Focus",
+    "version" : "1.0",
+    "description" : "This is a chrome extension that allows the user to focus when accessing youtube.com",
+    "action" : {
+        "default_icon" : {
+            "1" : "DeGods-5011-dead.png"
+        },
+        "default_popup" : "popup.html"
+    },
+    "icons" : {
+        "1" : "DeGods-5011-dead.png"
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["https://www.youtube.com/*"],
+            "js" : ["jquery.min.js", "./main.js"]
+        }
+    ]
+}
