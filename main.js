@@ -8,9 +8,14 @@
 
 
 //JQuery
-let contents = $('contents');
-let contentsParent = contents.parent();
-contents.remove();
-let img = new Image();
-img.src = chrome.runtime.getURL('/images/DeGods-5011-dead.png');
-contentsParent.prepend(img);
+window.addEventListener('load', () => {
+    window.setTimeout(() => {
+        let contents = $('#contents');
+        let contentsParent = contents.parent();
+        contents.remove();
+        let img = new Image();
+        img.src = chrome.runtime.getURL('/images/DeGods-5011-dead.png');
+        contentsParent.prepend(img);
+    }, 1000);
+})
+
