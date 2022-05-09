@@ -1,6 +1,7 @@
 // function to toggle extension on and off
 $('document').ready(() => {
-    let isOn = false;
+    let isOn = true;
+    const appId = 'ieoibhaamjkhijlemajemlggghdbgond';
     $('#extensionOnToggle').click(() => {
         if (isOn) {
             isOn = false;
