@@ -16,7 +16,14 @@
         {
             "matches" : ["https://www.youtube.com/*"],
             "js" : ["jquery.min.js", "./main.js", "./popup.js"]
+        },
+        {
+            "matches" : ["https://www.reddit.com/*"],
+            "js" : ["jquery.min.js", "./redditScript.js"]
         }
+    ],
+    "permissions" : [
+        "management"
     ],
     "web_accessible_resources" : [{
         "matches" : ["<all_urls>"],
