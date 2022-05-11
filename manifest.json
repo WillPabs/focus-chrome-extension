@@ -15,7 +15,8 @@
     "content_scripts" : [
         {
             "matches" : ["https://www.youtube.com/*"],
-            "js" : ["jquery.min.js", "./main.js", "./popup.js"]
+            "js" : ["jquery.min.js", "./main.js", "./popup.js"],
+            "css" : ["./index.css"]
         },
         {
             "matches" : ["https://www.reddit.com/*"],
@@ -27,6 +28,6 @@
     ],
     "web_accessible_resources" : [{
         "matches" : ["<all_urls>"],
-        "resources" : ["/images/DeGods-5011-dead.png"]
+        "resources" : ["/images/*"]
     }]
 }
