@@ -28,6 +28,6 @@
     ],
     "web_accessible_resources" : [{
         "matches" : ["<all_urls>"],
-        "resources" : ["/images/DeGods-5011-dead.png"]
+        "resources" : ["/images/*"]
     }]
 }
